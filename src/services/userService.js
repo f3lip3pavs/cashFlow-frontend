@@ -5,8 +5,7 @@ export async function tokenLogin(name, pass){ // alterar nome para getUserToken
     const header = {
         method: "POST", 
         headers: {
-            "Content-Type": "application/json",
-            "Accept": "*/*"
+            "Content-Type": "application/json"
         },
         body: JSON.stringify({
             username: name,
@@ -15,12 +14,8 @@ export async function tokenLogin(name, pass){ // alterar nome para getUserToken
     }
 
     return fetch(`${baseURL}/login`, header)
-    .then(res => {
-        return res.json()
-    })
-    .then(json => {
-        return json
-    })
+    .then(res => res.json())
+    .then(json => json)
 }
 
 export async function getUser(token) {

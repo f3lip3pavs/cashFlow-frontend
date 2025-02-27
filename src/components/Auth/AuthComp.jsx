@@ -22,6 +22,8 @@ export default function AuthComp() {
     async function login(data){
         const login = await tokenLogin(data.username, data.password);
 
+        console.log('teste')
+        
         let expire = expiration(1);
 
         document.cookie = `token=${login.token}; expires=${expire}; path=/`;
