@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {darkTheme, lightTheme} from '../../theme'
+import {darkTheme} from '../../theme.js'
 
 const theme = darkTheme
 

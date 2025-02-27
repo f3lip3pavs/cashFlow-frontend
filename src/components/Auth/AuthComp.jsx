@@ -1,7 +1,7 @@
-import { AuthStyle } from "./AuthStyle"
+import { AuthStyle } from "./AuthStyle.js"
 import { Link, useNavigate } from "react-router"
 import { useForm } from "react-hook-form"
-import { tokenLogin } from "../../services/userService"
+import { tokenLogin } from "../../services/userService.js"
 import { useState, useEffect } from "react"
 
 export default function AuthComp() {

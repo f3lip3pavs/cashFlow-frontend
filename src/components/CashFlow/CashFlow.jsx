@@ -1,4 +1,4 @@
-import { Card, ContainerCards } from "./CardStyle"
+import { Card, ContainerCards } from "./CardStyle.js"
 import pencil from '../../assets/pencil.png'
 import trash from '../../assets/trash.png'
 import { getCashflow } from "../../services/cashFlowService.js"

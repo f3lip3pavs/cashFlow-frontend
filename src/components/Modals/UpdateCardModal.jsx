@@ -1,8 +1,8 @@
 import { useForm } from "react-hook-form";
-import { UpdateCardStyle } from "./UpdateCardStyle";
-import {updateCard} from '../../services/cashFlowService'
+import { UpdateCardStyle } from "./UpdateCardStyle.js";
+import {updateCard} from '../../services/cashFlowService.js'
 import { useContext } from "react";
-import { Context } from '../../context/context'
+import { Context } from '../../context/context.js'
 
 export default function UpdateCardModal({cardID, setUpdateModal}){
     const {register, handleSubmit} = useForm()

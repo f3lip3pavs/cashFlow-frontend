@@ -1,6 +1,6 @@
 import { RegisterStyle } from "./RegisterStyle.js"
 import { useForm } from "react-hook-form"
-import { createUser } from "../../services/userService"
+import { createUser } from "../../services/userService.js"
 import { useState } from "react";
 import { useNavigate } from "react-router";
 

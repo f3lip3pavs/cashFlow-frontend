@@ -1,5 +1,5 @@
-import ConfigComp from '../../components/Config/ConfigComp'
-import SideBar from '../../components/SideBar/SideBar'
+import ConfigComp from '../../components/Config/ConfigComp.jsx'
+import SideBar from '../../components/SideBar/SideBar.jsx'
 
 export default function Config(){
 

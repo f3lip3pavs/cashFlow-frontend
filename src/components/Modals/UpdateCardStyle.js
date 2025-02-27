@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { darkTheme } from "../../theme";
+import { darkTheme } from "../../theme.js";
 
 export const UpdateCardStyle = styled.div`
     position: fixed;

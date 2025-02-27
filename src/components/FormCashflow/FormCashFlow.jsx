@@ -1,8 +1,8 @@
 import { useContext, useState } from "react";
-import { FormCashFlowStyle } from "./formCashFlowStyle";
+import { FormCashFlowStyle } from "./formCashFlowStyle.js";
 import { useForm } from "react-hook-form";
-import { setCashFlow } from "../../services/cashFlowService";
-import { Context } from '../../context/context'
+import { setCashFlow } from "../../services/cashFlowService.js";
+import { Context } from '../../context/context.js'
 export default function FormCashFlow(){
     const {register, handleSubmit, setValue} = useForm()
     const [exception, setException] = useState(false)

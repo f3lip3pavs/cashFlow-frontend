@@ -1,7 +1,7 @@
-import { DeleteCardStyle } from "./DeleteCardStyle"
-import {deleteCard} from '../../services/cashFlowService'
+import { DeleteCardStyle } from "./DeleteCardStyle.js"
+import {deleteCard} from '../../services/cashFlowService.js'
 import { useContext } from "react"
-import { Context } from "../../context/context"
+import { Context } from "../../context/context.js"
 
 //alterei a variavel deleteId para cardID
 export default function DeleteCardModel({cardID, setModal}){

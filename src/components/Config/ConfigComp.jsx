@@ -3,13 +3,12 @@ import lockImg from '../../assets/lock.png'
 import userImg from '../../assets/user.png'
 import trash from '../../assets/trash.png'
 import { useContext, useEffect, useState } from 'react'
-import { ConfigStyle } from './ConfigStyle'
-import DeleteAccountModal from '../Modals/DeleteAccountModal'
+import { ConfigStyle } from './ConfigStyle.js'
+import DeleteAccountModal from '../Modals/DeleteAccountModal.jsx'
 import { useForm } from 'react-hook-form'
 import { useNavigate } from 'react-router'
-import { getUser } from '../../services/userService'
-import { updateUser } from '../../services/userService'
-import { Context } from '../../context/context'
+import { getUser, updateUser } from '../../services/userService.js'
+import { Context } from '../../context/context.js'
 
 export default function ConfigComp(){
     const [user, setUser] = useState(false);

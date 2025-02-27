@@ -1,5 +1,4 @@
-
-import { SideBarStyle } from './SideBarStyle'
+import { SideBarStyle } from './SideBarStyle.js'
 import home from '../../assets/home.png'
 import homeFilled from '../../assets/home-filled.png'
 import moon from '../../assets/moon.png'
@@ -9,8 +8,8 @@ import userFilled from '../../assets/user-filled.png'
 import logoutApp from '../../assets/logout.png'
 import { Link } from 'react-router'
 import { useContext } from 'react'
-import { Context } from '../../context/context'
-import { darkTheme, lightTheme } from '../../theme'
+import { Context } from '../../context/context.js'
+import { darkTheme, lightTheme } from '../../theme.js'
 
 export default function SideBar(){
     const {style, setStyle} = useContext(Context)

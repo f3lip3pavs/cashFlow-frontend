@@ -1,10 +1,7 @@
-//import { StrictMode } from 'react'
-//import App from './App.jsx'
 import { createRoot } from 'react-dom/client'
 import { BrowserRouter, Route, Routes } from 'react-router'
 import Home from './pages/Home/Home.jsx'
 import Auth from './pages/Auth/Auth.jsx'
-import GlobalStyle from './GlobalStyle.jsx'
 import RegisterComp from './components/Register/RegisterComp.jsx'
 import Config from './pages/Config/Config.jsx'
 import { Provider } from './context/Provider.jsx'
@@ -34,8 +31,3 @@ createRoot(document.getElementById('root')).render(
       </Provider>
   </BrowserRouter>,
 )
-
-// createRoot(document.getElementById('root')).render(
-//   <StrictMode>
-//   </StrictMode>,
-// )

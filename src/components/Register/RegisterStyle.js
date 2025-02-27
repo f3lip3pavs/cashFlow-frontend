@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { darkTheme } from "../../theme";
+import { darkTheme } from "../../theme.js";
 
 export const RegisterStyle = styled.section`
     background-color: ${darkTheme.colors.background};

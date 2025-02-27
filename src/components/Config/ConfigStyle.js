@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { lightTheme } from "../../theme";
+import { lightTheme } from "../../theme.js";
 
 export const ConfigStyle = styled.section`
 

@@ -1,9 +1,9 @@
 import { useContext } from "react"
-import { DeleteAccountStyle } from "./DeleteAccountStyle"
-import { Context } from "../../context/context"
+import { DeleteAccountStyle } from "./DeleteAccountStyle.js"
+import { Context } from "../../context/context.js"
 import { useForm } from "react-hook-form"
 import { useNavigate } from "react-router"
-import { deleteUser } from "../../services/userService"
+import { deleteUser } from "../../services/userService.js"
 
 export default function DeleteAccountModal({setDel, username}){
     const {style} = useContext(Context)
