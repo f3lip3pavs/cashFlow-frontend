@@ -3,7 +3,6 @@ import {deleteCard} from '../../services/cashFlowService.js'
 import { useContext } from "react"
 import { Context } from "../../context/context.js"
 
-//alterei a variavel deleteId para cardID
 export default function DeleteCardModel({cardID, setModal}){
     const {style} = useContext(Context)
     

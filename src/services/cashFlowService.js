@@ -1,4 +1,5 @@
-const baseURL = 'https://cashflow-sr12.onrender.com' //'http://localhost:8080'
+//const baseURL = 'https://cashflow-sr12.onrender.com'
+const baseURL = 'http://localhost:8080'
 
 export async function getCashflow(token, UrlOptions) {
     
@@ -66,8 +67,11 @@ export async function updateCard(cardID, token, body) {
     };
 
     header.body = JSON.stringify(body);
-
-    fetch(`${baseURL}/cashFlow/${cardID}`, header)
-    .then(res => res.json())
+    console.log('function: updateCard from src/services/cashFlowService.js: haader', header)
+    
+    return fetch(`${baseURL}/cashFlow/${cardID}`, header)
+    .then(res => {
+        console.log('function: updateCard from src/services/cashFlowService.js: response of fetch: ', res)
+        return res.json()})
     .then(json => json)
 }

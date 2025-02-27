@@ -4,9 +4,12 @@ this project is a basic study of API and CRUD.
 
 ### Pending features
 
+- fix bug in update cards
+- resolve the format nunber in input number form
 
 ### Em desenvolvimento
 
+- fix bug in delete card
 
 ### concluído
 

@@ -15,6 +15,7 @@ export default function CashFlow(){
     const [modal, setModal] = useState(false)
     const [updateModal, setUpdateModal] = useState(false)
     const [cardID, setCardID] = useState('')
+
     const {style} = useContext(Context)
     
     const navigate = useNavigate()
@@ -27,7 +28,7 @@ export default function CashFlow(){
             const token = document.cookie.split('=')[1].slice(1,-1);
  
             getCashflow(token, '/cashFlow').then(res => {
-                console.log('cards: ', cards)
+                console.log('function getCards from src/components/cashFlow/cashFlow.jsx cards: ', cards)
                 setCards(res)
             });
 

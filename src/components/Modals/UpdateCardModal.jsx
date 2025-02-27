@@ -26,7 +26,10 @@ export default function UpdateCardModal({cardID, setUpdateModal}){
         
         
         updateCard(cardID, token, data)
-        .then(() => window.location.reload())
+        .then(res => {
+            console.log('funciotn: updateCard from src/components/modals/UpdateCardModal.jsx', res)
+            window.location.reload()
+        })
         .catch(e => console.log(`erro: ${e}`))
     }
 
@@ -49,7 +52,7 @@ export default function UpdateCardModal({cardID, setUpdateModal}){
                     <input {...register('date')} type="date" placeholder="Date"/>
                     <textarea {...register('description')} placeholder="Description"/>
                     <div className="container-button">
-                        <button className="update">Update</button>
+                        <button type="submit" className="update">Update</button>
                         <button onClick={() => setUpdateModal(false)} className="cancel-neutral">Cancel</button>
                     </div>
                 </form>
