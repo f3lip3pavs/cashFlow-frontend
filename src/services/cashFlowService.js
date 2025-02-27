@@ -1,14 +1,4 @@
-const baseURL = 'http://localhost:8080'
-const key = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ODYwNTAzNmM2NjIxYzY3NTk2Yzg4ZSIsImlhdCI6MTczOTQwMDYxNiwiZXhwIjoxNzM5NDA0MjE2fQ.hSUounTolYdNNQ8QZdgz1ZgnAOxoyTtirQqv5gzfgHI"
-const datas = {
-    title: "goiaba",
-    tag: "2012",
-    value: "1",
-    cashInflow: "false",
-    cashOutflow: "",
-    date: "2025-01-20T00:00:00.000Z",
-    description: "não sei se eu pego o onibus ou se compro a goiaba"
-}
+const baseURL = 'https://cashflow-sr12.onrender.com' //'http://localhost:8080'
 
 export async function getCashflow(token, UrlOptions) {
     

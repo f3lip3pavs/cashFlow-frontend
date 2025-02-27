@@ -1,8 +1,9 @@
-import { RegisterStyle } from "./registerStyle"
+import { RegisterStyle } from "./RegisterStyle.js"
 import { useForm } from "react-hook-form"
 import { createUser } from "../../services/userService"
 import { useState } from "react";
 import { useNavigate } from "react-router";
+
 export default function RegisterComp() {
     const {register, handleSubmit, setValue} = useForm();
     const [span, setSpan] = useState(false)

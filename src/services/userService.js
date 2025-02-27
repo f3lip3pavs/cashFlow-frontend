@@ -1,7 +1,4 @@
-export const baseURL = 'http://localhost:8080'
-const name = "felipe.pavs"
-const pass = "1234"
-const key = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ODYwNTAzNmM2NjIxYzY3NTk2Yzg4ZSIsImlhdCI6MTczOTI1MDkxMiwiZXhwIjoxNzM5MjU0NTEyfQ.Pn3wO7XkJ8q4QgXkr4nX73xF0i34Mt6nH1nH20xlKlg"
+export const baseURL = 'https://cashflow-sr12.onrender.com'//'http://localhost:8080'
 
 export async function tokenLogin(name, pass){ // alterar nome para getUserToken
 
