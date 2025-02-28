@@ -15,9 +15,7 @@ export async function getCashflow(token, UrlOptions) {
     .then(json => json)
 }
 
-export function setCashFlow(token, data){
-
-
+export async function setCashFlow(token, data){
 
     const header = {
         method: 'POST',
@@ -28,7 +26,7 @@ export function setCashFlow(token, data){
         body: JSON.stringify({
             title: data.title,
             tag: data.tag,
-            value: data.value,
+            value: Number(data.value),
             cashInflow: data.mov == "in" ? "true" : "false",
             cashOutflow: data.mov == "out" ? "true" : "false",
             date: data.date,
@@ -66,7 +64,14 @@ export async function updateCard(cardID, token, body) {
         }
     };
 
-    header.body = JSON.stringify(body);
+    if(body.value){
+        let {value} = body
+        body.value = Number(value)
+        header.body = JSON.stringify(body);
+    }else{
+        header.body = JSON.stringify(body);
+    }
+
     console.log('function: updateCard from src/services/cashFlowService.js: haader', header)
     
     return fetch(`${baseURL}/cashFlow/${cardID}`, header)
